@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
         --dark-primary: #16194F;
         --border-colour: #CAD6F1;      
     }
+    html{
+        @media screen and (max-width:700px){
+            font-size: 1rem;
+        }
+    }
 
     *{
         margin: 0;
@@ -52,6 +57,15 @@ const GlobalStyle = createGlobalStyle`
     .c-para{
         text-align: center;
     }
+
+    /* @media screen and (max-width:954px){
+        .secondary-heading{
+            font-size: 2.5rem;
+        }
+        p{
+            line-height: 1.5rem;
+        }
+    } */
 `;
 
 export default GlobalStyle;

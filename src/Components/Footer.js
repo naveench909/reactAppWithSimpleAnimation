@@ -62,13 +62,25 @@ const FooterStyled = styled.footer`
     padding: 0 18rem;
     background-color: #DCE2F0;
     @media screen and (max-width: 1347px){
-        padding: 5rem 14rem;
+        padding: 3rem 14rem;
     }
     @media screen and (max-width: 1186px){
-        padding: 5rem 8rem;
+        padding: 1rem 8rem;
     }
     @media screen and (max-width: 990px){
-        padding: 5rem 4rem;
+        padding: 0rem 4rem;
+    }
+
+    ul{
+        @media screen and (max-width: 630px){
+        /* padding: 5rem 4rem; */
+            font-size: 1rem;
+        }
+        @media screen and (max-width: 540px){
+        /* padding: 5rem 4rem; */
+            font-size: 0.8rem;
+        }
+
     }
     .footer-con{
         display: grid;

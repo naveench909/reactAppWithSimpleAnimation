@@ -23,6 +23,10 @@ const HeaderStyled = styled.header`
     background-position-y: 100%;
     .header-content{
         padding: 0 10rem;
+        @media screen and (max-width:820px){
+            padding: 0 5rem;
+        }
     }
+
 `;
 export default Header

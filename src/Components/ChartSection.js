@@ -48,14 +48,21 @@ const ChartStyled = styled.section`
     .chart-con{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        @media screen and (max-width: 1347px){
+        @media screen and (max-width: 920px){
             grid-template-columns: repeat(1, 1fr);
+        }
+        @media screen and (max-width:777px){
+            padding-top: 1.9rem;
+        }
+        @media screen and (max-width:772px){
+            padding-top: 8rem;
         }
         .chart-left{
             width: 80%;
-            @media screen and (max-width: 1347px){
-                width: 100%;
-            }
+                @media screen and (max-width: 1500px){
+                    width: 100%;
+                }
+                
             .stats{
                 img{
                     box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);

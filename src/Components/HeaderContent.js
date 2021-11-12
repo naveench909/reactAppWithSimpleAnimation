@@ -34,10 +34,17 @@ const HeaderContentStyled = styled.div`
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     padding-top: 3rem;
+    @media screen and (max-width:820px){
+        grid-template-columns: 1fr .1fr
+    }
+
     .left-content{
         display: flex;
         align-items: center;
         padding-right: 3rem;
+        @media screen and (max-width:820px){
+            padding-right: 0rem;
+        }
         h1{
             font-size: 4rem;
             font-weight: 600;
@@ -53,6 +60,9 @@ const HeaderContentStyled = styled.div`
         position: relative;
         display: flex;
         justify-content: center;
+        @media screen and (max-width:820px){
+            display: none;
+        }
         .phone{
             width: 80%;
         }
@@ -111,6 +121,17 @@ const HeaderContentStyled = styled.div`
                 transform: translateY(0) rotate(0deg) scale(1) translateX(0);
             }
         }
+    }
+
+    @media screen and (max-width:1200px){
+        /* grid-template-columns: .8fr 1.2fr; */
+        .left-text-container{
+            h1{
+                font-size:2rem;
+                font-weight: 400;
+            }
+        }
+
     }
 
 

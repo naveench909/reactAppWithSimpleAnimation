@@ -30,7 +30,15 @@ const NavigationStyled = styled.nav`
         display: flex;
         justify-content: space-between;
         width: 40%;
+        @media screen and (max-width:800px){
+            width: 50%;
+        }
+        @media screen and (max-width:700px){
+            display: none;
+        }
     }
+    
+    
 `;
 
 export default Navigation

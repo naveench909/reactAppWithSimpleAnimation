@@ -21,21 +21,11 @@ function App() {
       <Header />
       <OuterLayout>
         <MainStyled>
-          <Fade left>
-            <CardSection />
-          </Fade>  
-          <Fade >
-              <ChartSection />
-            </Fade>
-            <Fade left>
-              <MessagingSection />
-            </Fade>
-            <Fade right>
-              <PaymentSection />
-            </Fade>
-            <Fade left>
-              <FAQSection />
-            </Fade>
+          <Fade left><CardSection /></Fade>  
+          <Fade><ChartSection /></Fade>
+          <Fade left><MessagingSection /></Fade>
+          <Fade right><PaymentSection /></Fade>
+          <Fade left><FAQSection /></Fade>
         </MainStyled>
       </OuterLayout>
       <Fade bottom>
